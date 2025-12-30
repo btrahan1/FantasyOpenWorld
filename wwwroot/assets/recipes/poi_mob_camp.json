@@ -1,0 +1,332 @@
+{
+    "Name": "WoW_Style_Mob_Camp",
+    "Parts": [
+        {
+            "Id": "tent_center_pole",
+            "Shape": "Cylinder",
+            "Position": [
+                0,
+                1.5,
+                -2.0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.15,
+                3.0,
+                0.15
+            ],
+            "ColorHex": "#5C4033",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "tent_roof",
+            "ParentId": "tent_center_pole",
+            "Shape": "Cone",
+            "Position": [
+                0,
+                0.1,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                4.5,
+                3.2,
+                4.5
+            ],
+            "ColorHex": "#6F4E37",
+            "Material": "Leather"
+        },
+        {
+            "Id": "tent_flap_l",
+            "ParentId": "tent_roof",
+            "Shape": "Box",
+            "Position": [
+                -0.3,
+                -0.4,
+                0.35
+            ],
+            "Rotation": [
+                0,
+                45,
+                0
+            ],
+            "Scale": [
+                0.5,
+                0.8,
+                0.05
+            ],
+            "ColorHex": "#5D3A1A",
+            "Material": "Leather"
+        },
+        {
+            "Id": "tent_flap_r",
+            "ParentId": "tent_roof",
+            "Shape": "Box",
+            "Position": [
+                0.3,
+                -0.4,
+                0.35
+            ],
+            "Rotation": [
+                0,
+                -45,
+                0
+            ],
+            "Scale": [
+                0.5,
+                0.8,
+                0.05
+            ],
+            "ColorHex": "#5D3A1A",
+            "Material": "Leather"
+        },
+        {
+            "Id": "ground_rug",
+            "Shape": "Box",
+            "Position": [
+                0,
+                0.02,
+                -2.0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                3.0,
+                0.04,
+                3.0
+            ],
+            "ColorHex": "#4B3621",
+            "Material": "Leather"
+        },
+        {
+            "Id": "fire_pit_center",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                0,
+                1.5
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "ColorHex": "#222222",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "stone_1",
+            "ParentId": "fire_pit_center",
+            "Shape": "Sphere",
+            "Position": [
+                0.6,
+                0.1,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.25,
+                0.3
+            ],
+            "ColorHex": "#808080",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "stone_2",
+            "ParentId": "fire_pit_center",
+            "Shape": "Sphere",
+            "Position": [
+                -0.6,
+                0.1,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.25,
+                0.3
+            ],
+            "ColorHex": "#707070",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "stone_3",
+            "ParentId": "fire_pit_center",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                0.1,
+                0.6
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.25,
+                0.3
+            ],
+            "ColorHex": "#808080",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "stone_4",
+            "ParentId": "fire_pit_center",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                0.1,
+                -0.6
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.25,
+                0.3
+            ],
+            "ColorHex": "#707070",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "log_1",
+            "ParentId": "fire_pit_center",
+            "Shape": "Cylinder",
+            "Position": [
+                0,
+                0.15,
+                0
+            ],
+            "Rotation": [
+                0,
+                45,
+                90
+            ],
+            "Scale": [
+                0.12,
+                0.8,
+                0.12
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "log_2",
+            "ParentId": "fire_pit_center",
+            "Shape": "Cylinder",
+            "Position": [
+                0,
+                0.15,
+                0
+            ],
+            "Rotation": [
+                0,
+                -45,
+                90
+            ],
+            "Scale": [
+                0.12,
+                0.8,
+                0.12
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "flame_core",
+            "ParentId": "fire_pit_center",
+            "Shape": "Cone",
+            "Position": [
+                0,
+                0.4,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.5,
+                0.8,
+                0.5
+            ],
+            "ColorHex": "#FF4500",
+            "Material": "Glow"
+        },
+        {
+            "Id": "flame_inner",
+            "ParentId": "flame_core",
+            "Shape": "Cone",
+            "Position": [
+                0,
+                -0.1,
+                0
+            ],
+            "Rotation": [
+                0,
+                45,
+                0
+            ],
+            "Scale": [
+                0.6,
+                0.6,
+                0.6
+            ],
+            "ColorHex": "#FFD700",
+            "Material": "Glow"
+        },
+        {
+            "Id": "cooking_pot_stand",
+            "ParentId": "fire_pit_center",
+            "Shape": "Torus",
+            "Position": [
+                0,
+                0.8,
+                0
+            ],
+            "Rotation": [
+                90,
+                0,
+                0
+            ],
+            "Scale": [
+                0.4,
+                0.4,
+                0.1
+            ],
+            "ColorHex": "#2F2F2F",
+            "Material": "Metal"
+        }
+    ]
+}

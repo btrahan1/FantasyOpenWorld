@@ -1,0 +1,620 @@
+{
+    "Name": "Goblin_Warrior_Chainmail",
+    "Parts": [
+        {
+            "Id": "hips",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                0.9,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.6,
+                0.5,
+                0.45
+            ],
+            "ColorHex": "#4B3621",
+            "Material": "Leather"
+        },
+        {
+            "Id": "torso_armor",
+            "ParentId": "hips",
+            "Shape": "Box",
+            "Position": [
+                0,
+                0.4,
+                0
+            ],
+            "Rotation": [
+                10,
+                0,
+                0
+            ],
+            "Scale": [
+                0.7,
+                0.8,
+                0.5
+            ],
+            "ColorHex": "#4A4A4A",
+            "Material": "Metal"
+        },
+        {
+            "Id": "chest_plate",
+            "ParentId": "torso_armor",
+            "Shape": "Cylinder",
+            "Position": [
+                0,
+                0.1,
+                0.1
+            ],
+            "Rotation": [
+                90,
+                0,
+                0
+            ],
+            "Scale": [
+                0.5,
+                0.1,
+                0.6
+            ],
+            "ColorHex": "#696969",
+            "Material": "Metal"
+        },
+        {
+            "Id": "head",
+            "ParentId": "torso_armor",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                0.55,
+                0.15
+            ],
+            "Rotation": [
+                -15,
+                0,
+                0
+            ],
+            "Scale": [
+                0.5,
+                0.5,
+                0.5
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "nose",
+            "ParentId": "head",
+            "Shape": "Cone",
+            "Position": [
+                0,
+                -0.05,
+                0.35
+            ],
+            "Rotation": [
+                80,
+                0,
+                0
+            ],
+            "Scale": [
+                0.15,
+                0.5,
+                0.15
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "eye_l",
+            "ParentId": "head",
+            "Shape": "Sphere",
+            "Position": [
+                -0.15,
+                0.1,
+                0.22
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.1,
+                0.1,
+                0.05
+            ],
+            "ColorHex": "#FF4500",
+            "Material": "Glow"
+        },
+        {
+            "Id": "eye_r",
+            "ParentId": "head",
+            "Shape": "Sphere",
+            "Position": [
+                0.15,
+                0.1,
+                0.22
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.1,
+                0.1,
+                0.05
+            ],
+            "ColorHex": "#FF4500",
+            "Material": "Glow"
+        },
+        {
+            "Id": "ear_l",
+            "ParentId": "head",
+            "Shape": "Cone",
+            "Position": [
+                -0.3,
+                0.1,
+                -0.1
+            ],
+            "Rotation": [
+                -10,
+                -30,
+                80
+            ],
+            "Scale": [
+                0.15,
+                0.8,
+                0.25
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "ear_r",
+            "ParentId": "head",
+            "Shape": "Cone",
+            "Position": [
+                0.3,
+                0.1,
+                -0.1
+            ],
+            "Rotation": [
+                -10,
+                30,
+                -80
+            ],
+            "Scale": [
+                0.15,
+                0.8,
+                0.25
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "shoulder_l",
+            "ParentId": "torso_armor",
+            "Shape": "Sphere",
+            "Position": [
+                -0.45,
+                0.3,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.35,
+                0.35,
+                0.35
+            ],
+            "ColorHex": "#333333",
+            "Material": "Metal"
+        },
+        {
+            "Id": "arm_upper_l",
+            "ParentId": "shoulder_l",
+            "Shape": "Capsule",
+            "Position": [
+                -0.1,
+                -0.2,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                20
+            ],
+            "Scale": [
+                0.22,
+                0.5,
+                0.22
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "arm_lower_l",
+            "ParentId": "arm_upper_l",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0
+            ],
+            "Rotation": [
+                -30,
+                0,
+                0
+            ],
+            "Scale": [
+                0.2,
+                0.45,
+                0.2
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "hand_l",
+            "ParentId": "arm_lower_l",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                -0.25,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "shield_main",
+            "ParentId": "hand_l",
+            "Shape": "Cylinder",
+            "Position": [
+                -0.1,
+                0,
+                0.1
+            ],
+            "Rotation": [
+                0,
+                0,
+                90
+            ],
+            "Scale": [
+                0.8,
+                0.05,
+                0.8
+            ],
+            "ColorHex": "#4A4A4A",
+            "Material": "Metal"
+        },
+        {
+            "Id": "shield_boss",
+            "ParentId": "shield_main",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                0.05,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.25,
+                0.1,
+                0.25
+            ],
+            "ColorHex": "#D4AF37",
+            "Material": "Metal"
+        },
+        {
+            "Id": "shoulder_r",
+            "ParentId": "torso_armor",
+            "Shape": "Sphere",
+            "Position": [
+                0.45,
+                0.3,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.35,
+                0.35,
+                0.35
+            ],
+            "ColorHex": "#333333",
+            "Material": "Metal"
+        },
+        {
+            "Id": "arm_upper_r",
+            "ParentId": "shoulder_r",
+            "Shape": "Capsule",
+            "Position": [
+                0.1,
+                -0.2,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                -20
+            ],
+            "Scale": [
+                0.22,
+                0.5,
+                0.22
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "arm_lower_r",
+            "ParentId": "arm_upper_r",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0
+            ],
+            "Rotation": [
+                -45,
+                0,
+                0
+            ],
+            "Scale": [
+                0.2,
+                0.45,
+                0.2
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "hand_r",
+            "ParentId": "arm_lower_r",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                -0.25,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.2,
+                0.2,
+                0.2
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "sword_hilt",
+            "ParentId": "hand_r",
+            "Shape": "Cylinder",
+            "Position": [
+                0,
+                0,
+                0
+            ],
+            "Rotation": [
+                90,
+                0,
+                0
+            ],
+            "Scale": [
+                0.06,
+                0.4,
+                0.06
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Leather"
+        },
+        {
+            "Id": "sword_guard",
+            "ParentId": "sword_hilt",
+            "Shape": "Box",
+            "Position": [
+                0,
+                0.15,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.05,
+                0.08
+            ],
+            "ColorHex": "#D4AF37",
+            "Material": "Metal"
+        },
+        {
+            "Id": "sword_blade",
+            "ParentId": "sword_guard",
+            "Shape": "Box",
+            "Position": [
+                0,
+                0.6,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.12,
+                1.2,
+                0.03
+            ],
+            "ColorHex": "#A9A9A9",
+            "Material": "Metal"
+        },
+        {
+            "Id": "leg_upper_l",
+            "ParentId": "hips",
+            "Shape": "Capsule",
+            "Position": [
+                -0.25,
+                -0.25,
+                0
+            ],
+            "Rotation": [
+                15,
+                0,
+                10
+            ],
+            "Scale": [
+                0.28,
+                0.5,
+                0.28
+            ],
+            "ColorHex": "#4A4A4A",
+            "Material": "Metal"
+        },
+        {
+            "Id": "leg_lower_l",
+            "ParentId": "leg_upper_l",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0
+            ],
+            "Rotation": [
+                -25,
+                0,
+                0
+            ],
+            "Scale": [
+                0.25,
+                0.5,
+                0.25
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "foot_l",
+            "ParentId": "leg_lower_l",
+            "Shape": "Box",
+            "Position": [
+                0,
+                -0.3,
+                0.1
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.15,
+                0.5
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Leather"
+        },
+        {
+            "Id": "leg_upper_r",
+            "ParentId": "hips",
+            "Shape": "Capsule",
+            "Position": [
+                0.25,
+                -0.25,
+                0
+            ],
+            "Rotation": [
+                15,
+                0,
+                -10
+            ],
+            "Scale": [
+                0.28,
+                0.5,
+                0.28
+            ],
+            "ColorHex": "#4A4A4A",
+            "Material": "Metal"
+        },
+        {
+            "Id": "leg_lower_r",
+            "ParentId": "leg_upper_r",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0
+            ],
+            "Rotation": [
+                -25,
+                0,
+                0
+            ],
+            "Scale": [
+                0.25,
+                0.5,
+                0.25
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "foot_r",
+            "ParentId": "leg_lower_r",
+            "Shape": "Box",
+            "Position": [
+                0,
+                -0.3,
+                0.1
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.15,
+                0.5
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Leather"
+        }
+    ]
+}

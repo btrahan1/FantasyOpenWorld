@@ -1,0 +1,510 @@
+{
+    "Name": "Goblin_Grunt_HighFidelity",
+    "Parts": [
+        {
+            "Id": "torso_core",
+            "Shape": "Box",
+            "Position": [
+                0,
+                1.1,
+                0
+            ],
+            "Rotation": [
+                15,
+                0,
+                0
+            ],
+            "Scale": [
+                0.6,
+                0.7,
+                0.5
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "hips",
+            "ParentId": "torso_core",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                -0.4,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.65,
+                0.5,
+                0.5
+            ],
+            "ColorHex": "#4B3621",
+            "Material": "Leather"
+        },
+        {
+            "Id": "head",
+            "ParentId": "torso_core",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                0.5,
+                0.2
+            ],
+            "Rotation": [
+                -10,
+                0,
+                0
+            ],
+            "Scale": [
+                0.55,
+                0.5,
+                0.5
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "nose",
+            "ParentId": "head",
+            "Shape": "Cone",
+            "Position": [
+                0,
+                -0.05,
+                0.4
+            ],
+            "Rotation": [
+                85,
+                0,
+                0
+            ],
+            "Scale": [
+                0.15,
+                0.45,
+                0.15
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "ear_r",
+            "ParentId": "head",
+            "Shape": "Cone",
+            "Position": [
+                0.3,
+                0.1,
+                -0.1
+            ],
+            "Rotation": [
+                -20,
+                45,
+                -70
+            ],
+            "Scale": [
+                0.15,
+                0.7,
+                0.3
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "ear_l",
+            "ParentId": "head",
+            "Shape": "Cone",
+            "Position": [
+                -0.3,
+                0.1,
+                -0.1
+            ],
+            "Rotation": [
+                -20,
+                -45,
+                70
+            ],
+            "Scale": [
+                0.15,
+                0.7,
+                0.3
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "eye_r",
+            "ParentId": "head",
+            "Shape": "Sphere",
+            "Position": [
+                0.18,
+                0.1,
+                0.25
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.12,
+                0.12,
+                0.05
+            ],
+            "ColorHex": "#FFD700",
+            "Material": "Glass"
+        },
+        {
+            "Id": "eye_l",
+            "ParentId": "head",
+            "Shape": "Sphere",
+            "Position": [
+                -0.18,
+                0.1,
+                0.25
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.12,
+                0.12,
+                0.05
+            ],
+            "ColorHex": "#FFD700",
+            "Material": "Glass"
+        },
+        {
+            "Id": "shoulder_pad_r",
+            "ParentId": "torso_core",
+            "Shape": "Box",
+            "Position": [
+                0.45,
+                0.3,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                -20
+            ],
+            "Scale": [
+                0.4,
+                0.2,
+                0.45
+            ],
+            "ColorHex": "#71797E",
+            "Material": "Metal"
+        },
+        {
+            "Id": "arm_upper_r",
+            "ParentId": "torso_core",
+            "Shape": "Capsule",
+            "Position": [
+                0.4,
+                0.1,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                -45
+            ],
+            "Scale": [
+                0.25,
+                0.5,
+                0.25
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "arm_lower_r",
+            "ParentId": "arm_upper_r",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0.1
+            ],
+            "Rotation": [
+                -40,
+                0,
+                0
+            ],
+            "Scale": [
+                0.2,
+                0.45,
+                0.2
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "hand_r",
+            "ParentId": "arm_lower_r",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                -0.25,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.22,
+                0.22,
+                0.22
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "axe_handle",
+            "ParentId": "hand_r",
+            "Shape": "Cylinder",
+            "Position": [
+                0,
+                0,
+                0
+            ],
+            "Rotation": [
+                90,
+                0,
+                0
+            ],
+            "Scale": [
+                0.06,
+                1.2,
+                0.06
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Leather"
+        },
+        {
+            "Id": "axe_blade",
+            "ParentId": "axe_handle",
+            "Shape": "Box",
+            "Position": [
+                0,
+                0.45,
+                0.15
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.05,
+                0.4,
+                0.5
+            ],
+            "ColorHex": "#A9A9A9",
+            "Material": "Metal"
+        },
+        {
+            "Id": "arm_upper_l",
+            "ParentId": "torso_core",
+            "Shape": "Capsule",
+            "Position": [
+                -0.4,
+                0.1,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                45
+            ],
+            "Scale": [
+                0.25,
+                0.5,
+                0.25
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "arm_lower_l",
+            "ParentId": "arm_upper_l",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0.1
+            ],
+            "Rotation": [
+                -20,
+                0,
+                0
+            ],
+            "Scale": [
+                0.2,
+                0.45,
+                0.2
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "hand_l",
+            "ParentId": "arm_lower_l",
+            "Shape": "Sphere",
+            "Position": [
+                0,
+                -0.25,
+                0
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.22,
+                0.22,
+                0.22
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "leg_upper_r",
+            "ParentId": "hips",
+            "Shape": "Capsule",
+            "Position": [
+                0.25,
+                -0.2,
+                0
+            ],
+            "Rotation": [
+                10,
+                0,
+                -15
+            ],
+            "Scale": [
+                0.28,
+                0.45,
+                0.28
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "leg_lower_r",
+            "ParentId": "leg_upper_r",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0
+            ],
+            "Rotation": [
+                -20,
+                0,
+                0
+            ],
+            "Scale": [
+                0.24,
+                0.45,
+                0.24
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "foot_r",
+            "ParentId": "leg_lower_r",
+            "Shape": "Box",
+            "Position": [
+                0,
+                -0.25,
+                0.1
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.15,
+                0.5
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Leather"
+        },
+        {
+            "Id": "leg_upper_l",
+            "ParentId": "hips",
+            "Shape": "Capsule",
+            "Position": [
+                -0.25,
+                -0.2,
+                0
+            ],
+            "Rotation": [
+                10,
+                0,
+                15
+            ],
+            "Scale": [
+                0.28,
+                0.45,
+                0.28
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "leg_lower_l",
+            "ParentId": "leg_upper_l",
+            "Shape": "Capsule",
+            "Position": [
+                0,
+                -0.4,
+                0
+            ],
+            "Rotation": [
+                -20,
+                0,
+                0
+            ],
+            "Scale": [
+                0.24,
+                0.45,
+                0.24
+            ],
+            "ColorHex": "#5A7D36",
+            "Material": "Plastic"
+        },
+        {
+            "Id": "foot_l",
+            "ParentId": "leg_lower_l",
+            "Shape": "Box",
+            "Position": [
+                0,
+                -0.25,
+                0.1
+            ],
+            "Rotation": [
+                0,
+                0,
+                0
+            ],
+            "Scale": [
+                0.3,
+                0.15,
+                0.5
+            ],
+            "ColorHex": "#3D2B1F",
+            "Material": "Leather"
+        }
+    ]
+}
