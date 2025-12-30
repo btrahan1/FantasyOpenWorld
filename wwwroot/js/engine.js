@@ -25,10 +25,26 @@ window.gameEngine = {
         light.intensity = 0.7;
 
         // --- Environment ---
-        // Helper for consistent height (Mad Max Formula)
+        // Helper for consistent height with Plateau for Fort
         this.calculateTerrainHeight = function (x, z) {
+            // Natural Terrain (Waves)
             var y = Math.sin(x * 0.02) * 5 + Math.cos(z * 0.02) * 5;
             y += Math.sin(x * 0.1) * 1 + Math.cos(z * 0.1) * 1;
+
+            // Plateau Logic (For Fort at 0,0)
+            var dist = Math.sqrt(x * x + z * z);
+            var plateauHeight = 10;
+            var plateauRadius = 35; // Flat area
+            var blendRadius = 55;   // Slope area
+
+            if (dist < plateauRadius) {
+                return plateauHeight;
+            } else if (dist < blendRadius) {
+                // Smooth Blend (Linear for now, could be cosine)
+                var ratio = (dist - plateauRadius) / (blendRadius - plateauRadius); // 0 to 1
+                return plateauHeight * (1 - ratio) + y * ratio;
+            }
+
             return y;
         };
 
@@ -76,6 +92,9 @@ window.gameEngine = {
             inputMap[evt.sourceEvent.key.toLowerCase()] = false;
         }));
 
+        // Create Fort (On Plateau at height 10)
+        FortAssembler.buildFort(this.scene, 0, 0, 10);
+
         // --- Load Assets ---
         // Mobs
         const spawnMob = (recipeUrl, count, xParams, zParams, namePrefix, hp, scale = 1) => {
@@ -91,10 +110,10 @@ window.gameEngine = {
             });
         };
 
-        spawnMob('assets/recipes/goblin_grunt.json', 3, { range: 20, offset: -10 }, { range: 20, offset: 10 }, "grunt_", 10);
-        spawnMob('assets/recipes/goblin_warrior.json', 1, { range: 0, offset: 5 }, { range: 0, offset: 20 }, "warrior_", 25, 1.2);
-        spawnMob('assets/recipes/orc_warrior.json', 1, { range: 0, offset: -20 }, { range: 0, offset: 0 }, "orc_", 50, 1.5);
-        spawnMob('assets/recipes/grey_wolf.json', 3, { range: 20, offset: 20 }, { range: 20, offset: -10 }, "wolf_", 8);
+        spawnMob('assets/recipes/goblin_grunt.json', 3, { range: 20, offset: -40 }, { range: 20, offset: 40 }, "grunt_", 10);
+        spawnMob('assets/recipes/goblin_warrior.json', 1, { range: 0, offset: 40 }, { range: 0, offset: 40 }, "warrior_", 25, 1.2);
+        spawnMob('assets/recipes/orc_warrior.json', 1, { range: 0, offset: -40 }, { range: 0, offset: -40 }, "orc_", 50, 1.5);
+        spawnMob('assets/recipes/grey_wolf.json', 3, { range: 20, offset: 50 }, { range: 20, offset: -10 }, "wolf_", 8);
 
         // Camp
         fetch('assets/recipes/poi_mob_camp.json').then(r => r.json()).then(recipe => {
